@@ -85,5 +85,25 @@ namespace TestAreaCalculator
             string expected = "Shape: Triangle, Area: 24, Is Rectangular: True";
             Assert.Equal(expected, triangle.ToString());
         }
+
+        // WITHOUT KNOWING THE TYPE OF FIGURE 
+        [Fact]
+        public void Area_OfFigures_WithoutType()
+        {
+            List<IShape> shapes = new List<IShape>();
+            IShape square = new Square(2);
+            IShape triangle = new Triangle(6, 8, 10);
+            IShape circle = new Circle(2);
+            shapes.Add(square);
+            shapes.Add(triangle);
+            shapes.Add(circle);
+            List<double> actual = new List<double>();
+            foreach (IShape shape in shapes)
+            {
+                actual.Add(shape.CalculateArea());
+            }
+            List<double> expected = new List<double>{ 4, 24, 12.566370614359172 };
+            Assert.Equal(expected.ToArray(), actual.ToArray());
+        }
     }
 }
