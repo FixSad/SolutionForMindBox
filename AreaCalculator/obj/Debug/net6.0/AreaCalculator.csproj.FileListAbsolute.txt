@@ -1,0 +1,12 @@
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\bin\Debug\net6.0\AreaCalculator.deps.json
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\bin\Debug\net6.0\AreaCalculator.dll
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\bin\Debug\net6.0\AreaCalculator.pdb
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.csproj.AssemblyReference.cache
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.AssemblyInfoInputs.cache
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.AssemblyInfo.cs
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.csproj.CoreCompileInputs.cache
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.dll
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\refint\AreaCalculator.dll
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\AreaCalculator.pdb
+D:\projects\SolutionMindBox\SolutionForMindBox\AreaCalculator\obj\Debug\net6.0\ref\AreaCalculator.dll

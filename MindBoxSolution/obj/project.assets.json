@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "AreaCalculator/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AreaCalculator.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AreaCalculator.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AreaCalculator/1.0.0": {
+      "type": "project",
+      "path": "../AreaCalculator/AreaCalculator.csproj",
+      "msbuildProject": "../AreaCalculator/AreaCalculator.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "AreaCalculator >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Goga\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\projects\\SolutionMindBox\\SolutionForMindBox\\AreaCalculator\\AreaCalculator.csproj": {
+              "projectPath": "D:\\projects\\SolutionMindBox\\SolutionForMindBox\\AreaCalculator\\AreaCalculator.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
