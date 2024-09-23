@@ -7,7 +7,7 @@ namespace TestAreaCalculator
     {
         //SQUARE TESTING
         [Fact]
-        public void Square_TryPositiveSideWithDot()
+        public void Square_TryPositiveSide_WithDot()
         {
             IShape square = new Square(3.5);
             double area = square.CalculateArea();
@@ -31,6 +31,33 @@ namespace TestAreaCalculator
             string expected = "Shape: Square, Area: 256";
             string actual = square.ToString();
             Assert.Equal(expected, actual);
+        }
+
+        // CIRCLE TESTING
+        [Fact]
+        public void Circle_TryPositiveSide_WithDot()
+        {
+            IShape circle = new Circle(3.7);
+            circle.CalculateArea();
+            double area = Math.Round(circle.Area);
+            Assert.Equal(43, area);
+        }
+
+        [Fact]
+        public void Circle_TryNegativeSide()
+        {
+            IShape circle = new Circle(-5);
+            double area = Math.Round(circle.CalculateArea());
+            Assert.Equal(79, area);
+        }
+
+        [Fact]
+        public virtual void Circle_TryToString()
+        {
+            IShape circle = new Circle(2);
+            circle.CalculateArea();
+            string expected = "Shape: Circle, Area: 12,566370614359172";
+            Assert.Equal(expected, circle.ToString());
         }
     }
 }
