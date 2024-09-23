@@ -52,12 +52,38 @@ namespace TestAreaCalculator
         }
 
         [Fact]
-        public virtual void Circle_TryToString()
+        public void Circle_TryToString()
         {
             IShape circle = new Circle(2);
             circle.CalculateArea();
             string expected = "Shape: Circle, Area: 12,566370614359172";
             Assert.Equal(expected, circle.ToString());
+        }
+
+        // TRIANGLE TESTING
+        [Fact]
+        public void Triangle_AreaTryPositiveSide()
+        {
+            IShape triangle = new Triangle(4, 3, 3);
+            triangle.CalculateArea();
+            double area = triangle.Area;
+            Assert.Equal(4.47213595499958, area);
+        }
+
+        [Fact]
+        public void Triangle_RectangularTryNegativeSide()
+        {
+            Triangle triangle = new Triangle(-4, -3, -5);
+            Assert.True(triangle.IsRectangular);
+        }
+
+        [Fact]
+        public void Triangle_TryToString()
+        {
+            IShape triangle = new Triangle(6, 8, 10);
+            triangle.CalculateArea();
+            string expected = "Shape: Triangle, Area: 24, Is Rectangular: True";
+            Assert.Equal(expected, triangle.ToString());
         }
     }
 }
