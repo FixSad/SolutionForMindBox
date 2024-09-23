@@ -1,9 +1,4 @@
 ﻿using AreaCalculator.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AreaCalculator.Shapes
 {
@@ -15,7 +10,7 @@ namespace AreaCalculator.Shapes
 
         public Triangle(double a, double b, double c)
         {
-            _a = a; _b = b; _c = c;
+            _a = Math.Abs(a); _b = Math.Abs(b); _c = Math.Abs(c);
             IsRectangular = CalculateIsRectangular();
         }
 
@@ -26,10 +21,10 @@ namespace AreaCalculator.Shapes
             return false;
         }
 
-        public void CalculateArea()
+        public double CalculateArea()
         {
             double p = (_a + _b + _c) / 2;
-            Area = Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
+            return Area = Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
         }
 
         public override string ToString()

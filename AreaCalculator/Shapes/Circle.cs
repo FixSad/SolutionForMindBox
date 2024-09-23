@@ -9,7 +9,7 @@ namespace AreaCalculator.Shapes
 
         public Circle(double radius) => _radius = Math.Abs(radius);
         
-        public void CalculateArea() => Area = Math.PI * Math.Pow(_radius, 2);
+        public double CalculateArea() => Area = Math.PI * Math.Pow(_radius, 2);
 
         public override string ToString() => $"Shape: {this.GetType().Name}, Area: {Area}";
     }
